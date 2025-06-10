@@ -1,7 +1,7 @@
-import Header from "../component/header";
-import ProductCard from "../component/productOfTheDay";
-import LoginForm from "../component/loginForm";
-import Footer from "../component/footer";
+import Header from "../../component/header";
+import ProductCard from "../../component/productOfTheDay";
+import LoginForm from "../../component/loginForm";
+import Footer from "../../component/footer";
 
 
 function Home() {
