@@ -1,0 +1,1 @@
+# MagicVenteStock-Front
