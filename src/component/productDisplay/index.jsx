@@ -1,20 +1,11 @@
 import React from 'react';
-import { Package, ShoppingCart } from 'lucide-react';
-import { useCart } from '../../context/cartContext';
+import { Package } from 'lucide-react';
 
-const ProductCard = () => {
-  const { addItem } = useCart();
-
+const ProductDisplay = () => {
   const product = {
-    id: 'sacoche-gondor-1',
     name: 'Sacoche en Cuir du Gondor',
     price: 89.99,
   };
-
-  const handleAddToCart = () => {
-    addItem(product);
-  };
-
 
   return (
     <div className="bg-white rounded-2xl shadow-xl p-8 transition-all duration-300 hover:shadow-2xl">
@@ -45,19 +36,10 @@ const ProductCard = () => {
           </div>
           
           <div className="pt-4">
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-gray-600 leading-relaxed">
               Une magnifique sacoche en cuir véritable inspirée des traditions artisanales du Gondor. 
               Finitions soignées et design intemporel pour un accessoire d'exception.
             </p>
-            
-
-              <button
-                onClick={handleAddToCart}
-                className="w-full bg-amber-800 hover:bg-amber-900 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-200 transform hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] focus:ring-4 focus:ring-amber-300 flex items-center justify-center gap-3"
-              >
-                <ShoppingCart className="w-5 h-5" />
-                Ajouter au panier
-              </button>
           </div>
         </div>
       </div>
@@ -65,4 +47,4 @@ const ProductCard = () => {
   );
 };
 
-export default ProductCard;
+export default ProductDisplay;
